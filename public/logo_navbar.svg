@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="lightyellow" /> <stop offset="100%" stop-color="lightyellow" /> </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="url(#logo-gradient)" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M 100,30
+         A 70,70 0 1,1 50,150"
+      stroke-width="16"
+    />
+
+    <path
+      d="M 135,135
+         C 155,155 175,170 180,170
+         C 170,165 145,130 145,130"
+      stroke-width="12"
+      fill="url(#logo-gradient)"
+    />
+
+    <path
+      d="M 100,125
+         C 80,115 65,115 55,120
+         C 55,100 65,95 80,105
+         C 90,112 100,125 100,125 Z"
+      fill="url(#logo-gradient)"
+      stroke-width="2"
+    />
+    <path
+      d="M 100,125
+         C 120,115 135,115 145,120
+         C 145,100 135,95 120,105
+         C 110,112 100,125 100,125 Z"
+      fill="url(#logo-gradient)"
+      stroke-width="2"
+    />
+
+    <path
+      d="M 100,55 L 100,110 M 85,73 L 115,73"
+      stroke-width="8"
+    />
+  </g>
+</svg>
