@@ -1,16 +1,25 @@
+import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
 
 const Home = () => {
+  const [ header, setHeader ] = useState("");
   const headers = ["What's on your mind?", "What's calling you?", "What's your burden?", "A Verse for Your Heart", "Unwrap your burdens", "Want console?"];
-  // Write a logic to randomly pick a header from the headers array
+
+  // Randomly pick a header from the headers array once component mount
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * headers.length);
+    const header = headers[randomIndex];
+    setHeader(header);
+    //console.log(header);
+  }, []);
 
   return (
         <section>
             <NavBar />
 
             <header className="mt-30 ml-5 lg:ml-20 w-[80%]">
-              <h1 className="serif italic font-bold text-xl text-gray-800 mb-3 lg:text-5xl">What's on your mind?</h1>
+              <h1 className="serif italic font-bold text-xl text-gray-800 mb-3 lg:text-5xl">{ header }</h1>
               <p className="poppins text-md text-gray-800 lg:text-lg">Select from any category to get Bible quotes/verses relating to it :)</p>
             </header>
 
