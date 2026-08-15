@@ -1,7 +1,8 @@
 import { BrowserRouter,  Routes, Route } from "react-router";
 import LandingPage from "./pages/LandingPage";
-import Home from "./pages/Home";
+import Main from "./pages/Main";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -9,8 +10,9 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/app" element={<Main />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>
