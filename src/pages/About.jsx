@@ -6,7 +6,7 @@ const About = () => {
             <section>
                 <NavBar />
 
-                <main className="mt-30 ml-6 lg:ml-25">
+                <main className="mt-35 ml-6 lg:ml-25">
                     <header><h1 className="serif text-gray-800 text-3xl font-bold italic lg:text-5xl">About Quotr</h1></header>
                     <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5">Sometimes, you don't know what verse you're looking for. You just know what you're feeling.</p>
                     <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5"><b>Quotr</b> was created to make finding relevant Scripture easier.</p>
@@ -21,7 +21,7 @@ const About = () => {
                 </main>
 
                 <footer>
-                    <p className="serif text-center text-gray-800 italic mb-10">Created by <a className="text-red-900 underline" href="https://x.com/iam___zik" target="_blank">Isaac a.k.a Z!K</a></p>
+                    <p className="serif text-center text-gray-800 italic mb-10 flex gap-2 justify-center items-center"><span className="text-gray-500 monospace">{">"}</span> Made by <a className="text-red-900 underline" href="https://x.com/_IamZik" target="_blank">Isaac</a></p>
                 </footer>
             </section>
         </>

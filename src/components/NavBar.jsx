@@ -11,14 +11,14 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="bg-red-900 text-yellow-100 flex justify-around items-center gap-20 w-[100%] h-[60px] fixed top-0 z-100">
+        <nav className="bg-red-900 text-yellow-100 flex justify-around items-center gap-20 w-[100%] h-[60px] fixed top-0 z-100 lg:h-[70px] lg:py-[3.5%]">
             <div className="lg:w-[10%]">
-                <a href="https://quotr.pxxl.app">
+                <a href="https://usequotr.vercel.app">
                     <img src="/logo_navbar.svg" alt="Logo" className="rounded-full flex justify-center w-[40px] h-[40px] lg:ml-10" />
                 </a>
             </div>
 
-            <div className="story-script font-bold text-2xl lg:text-3xl lg:min-w-[20%] lg:ml-[490px]"><a href="https://quotr.pxxl.click">Quotr</a></div>
+            <div className="story-script font-bold text-2xl lg:text-4xl lg:min-w-[20%] lg:ml-[490px]"><a href="https://usequotr.vercel.app">Quotr</a></div>
 
             <div className="rounded-full w-[40px] h-[40px] cursor-pointer transition lg:hidden flex justify-center items-center transition" onClick={() => setIsOpen(!isOpen)}>
                 { isOpen ? <span className="text-3xl font-bold bg-yellow-100 text-black rounded-full w-9 h-9 flex justify-center items-center text-center hover:bg-yellow-50 transition"><X className="w-6 h-10" strokeWidth={3} /></span> : <span className="text-3xl font-bold text-yellow-50 text-center"><Menu className="w-6 h-6" strokeWidth={3} /></span> }
