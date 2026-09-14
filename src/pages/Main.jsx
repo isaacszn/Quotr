@@ -18,7 +18,7 @@ const Home = () => {
         <section>
             <NavBar />
 
-            <header className="mt-30 ml-5 lg:ml-20 w-[80%]">
+            <header className="mt-35 ml-5 lg:ml-20 w-[80%]">
               <h1 className="serif italic font-bold text-xl text-gray-800 mb-3 lg:text-5xl">{ header }</h1>
               <p className="poppins text-md text-gray-800 lg:text-lg">Select from any category to get Bible quotes/verses relating to it :)</p>
             </header>
