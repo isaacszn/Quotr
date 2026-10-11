@@ -10,7 +10,7 @@ const About = () => {
                     <header><h1 className="serif text-gray-800 text-3xl font-bold italic lg:text-5xl">About Quotr</h1></header>
                     <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5">Sometimes, you don't know what verse you're looking for. You just know what you're feeling.</p>
                     <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5"><b>Quotr</b> was created to make finding relevant Scripture easier.</p>
-                    <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5">Whether you're feeling anxious, lonely, confused...or you're simply going through a difficult season, <b>Quotr</b> helps you discover Bible verses or passages connected to what you're experiencing.</p>
+                    <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5">Whether you're feeling anxious, lonely, confused... or you're simply going through a difficult season, <b>Quotr</b> helps you discover Bible verses or passages connected to what you're experiencing.</p>
 
                     <header><h1 className="serif text-gray-800 text-3xl font-bold italic mt-15 lg:text-5xl">Why Quotr?</h1></header>
                     <p className="poppins text-gray-800 text-md w-[85%] lg:w-[70%] mt-5 lg:text-lg ml-5">There are thousands of verses in the Bible and sometimes finding the right one for a particular moment can be difficult.</p>
