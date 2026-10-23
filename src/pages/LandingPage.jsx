@@ -13,14 +13,14 @@ const LandingPage = () => {
                         <img src="/logo.svg" alt="Logo" className="lg:mt-[30px] lg:ml-[90px] h-[250px] w-[250px] block mt-5 mx-auto lg:w-[500px] lg:h-[500px]" />
                     </section>
 
-                    <section className="lg:mt-15 lg:ml-[50px]">
+                    <section className="lg:mt-16 lg:ml-[50px]">
                         <header>
-                            <span className="story-script font-bold text-7xl lg:text-[130px] text-center block">Find Your</span>
-                            <span className="story-script font-bold text-7xl lg:text-[130px] text-center block">Verse</span>
+                            <span className="playfair-display-extrabold-italic text-7xl lg:text-[130px] text-center block">Find Your</span>
+                            <span className="playfair-display-extrabold-italic text-7xl lg:text-[130px] text-center block">Verse</span>
                         </header>
-                        <p className="poppins text-gray-900 text-xl mt-5 lg:mt-12 text-center mx-auto w-[80%] lg:w-[70%] lg:text-2xl">Find relevant Bible quotations and readings that is connected to what you're experiencing.</p>
+                        <p className="plus-jakarta-sans text-gray-900 text-xl mt-5 lg:mt-12 text-center mx-auto w-[80%] lg:w-[70%] lg:text-2xl">Find relevant Bible quotations and readings that are connected to what you're experiencing.</p>
                         <Link to="/app">
-                            <button className="poppins flex justify-center items-center gap-3 text-lg bg-red-900 text-yellow-100 rounded-full py-3 px-2 w-[60%] block mx-auto my-6 cursor-pointer hover:bg-red-800 active:bg-red-800 focus:bg-red-800 transition shadow-sm shadow-red-500/90 hover:shadow-md hover:shadow-red-900 lg:w-[250px]">Get Started <MoveRight size={40} strokeWidth={1.6} /></button>
+                            <button className="plus-jakarta-sans flex justify-center items-center gap-3 text-lg bg-red-900 text-yellow-100 rounded-full py-3 px-5 w-[60%] block mx-auto my-6 cursor-pointer hover:bg-red-800 active:bg-red-800 focus:bg-red-800 transition shadow-sm shadow-red-500/90 hover:shadow-md hover:shadow-red-900 lg:w-[250px]">Get Started <MoveRight size={40} strokeWidth={1.6} /></button>
                         </Link>
                     </section>
                 </section>

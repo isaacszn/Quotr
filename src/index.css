@@ -1,27 +1,115 @@
 @import "tailwindcss";
 
-@font-face {
-    src: url("/src/fonts/Poppins-Regular.ttf");
-    font-family: "Poppins";
-}
+
+/* 
+    FONT DECLARATIONS & IMPORTATION 
+*/
+
 
 @font-face {
-    src: url("/src/fonts/StoryScript-Regular.ttf");
-    font-family: "Story Script";
+    src: url("/src/fonts/Urbanist-Regular.ttf");
+    font-family: "Urbanist";
 }
 
-.poppins {
-    font-family: "Poppins", sans-serif;
+@font-face {
+    src: url("/src/fonts/PlusJakartaSans-Regular.ttf");
+    font-family: "Plus Jakarta Sans";
 }
 
-.story-script {
-    font-family: "Story Script", sans-serif;
+@font-face {
+    src: url("/src/fonts/PlusJakartaSans-Medium.ttf");
+    font-family: "Plus Jakarta Sans Medium";
 }
 
-.monospace {
-    font-family: monospace;
+@font-face {
+    src: url("/src/fonts/PlusJakartaSans-ExtraBold.ttf");
+    font-family: "Plus Jakarta Sans Extra Bold";
 }
 
-.serif {
-    font-family: serif;
+@font-face {
+    src: url("/src/fonts/JetBrainsMono-Regular.ttf");
+    font-family: "Jetbrains Mono";
+}
+
+@font-face {
+    src: url("/src/fonts/JetBrainsMono-ExtraBold.ttf");
+    font-family: "Jetbrains Mono Extra Bold";
+}
+
+@font-face {
+    src: url("/src/fonts/CormorantGaramond-Regular.ttf");
+    font-family: "Cormorant Garamond";
+}
+
+@font-face {
+    src: url("/src/fonts/CormorantGaramond-Medium.ttf");
+    font-family: "Cormorant Garamond Medium";
+}
+
+@font-face {
+    src: url("/src/fonts/CormorantGaramond-Bold.ttf");
+    font-family: "Cormorant Garamond Bold";
+}
+
+@font-face {
+    src: url("/src/fonts/CormorantGaramond-BoldItalic.ttf");
+    font-family: "Cormorant Garamond Bold Italic";
+}
+
+@font-face {
+    src: url("/src/fonts/CormorantGaramond-SemiBold.ttf");
+    font-family: "Cormorant Garamond Semi Bold";
+}
+
+@font-face {
+    src: url("/src/fonts/PlayfairDisplay-ExtraBoldItalic.ttf");
+    font-family: "Playfair Display Extra Bold Italic";
+}
+
+.urbanist {
+    font-family: "Urbanist", sans-serif;
+}
+
+.plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.plus-jakarta-sans-medium {
+    font-family: "Plus Jakarta Sans Medium", sans-serif;
+}
+
+.plus-jakarta-sans-extrabold {
+    font-family: "Plus Jakarta Sans Extra Bold", sans-serif;
+}
+
+.jetbrains-mono {
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.jetbrains-mono-extrabold {
+    font-family: "Jetbrains Mono Extra Bold", monospace;
+}
+
+.cormorant-garamond {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.cormorant-garamond-medium {
+    font-family: "Cormorant Garamond Medium", serif;
+}
+
+.cormorant-garamond-bold {
+    font-family: "Cormorant Garamond Bold", serif;
+}
+
+.cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond Bold Italic", serif;
+}
+
+.cormorant-garamond-semibold {
+    font-family: "Cormorant Garamond Semi Bold", serif;
+}
+
+.playfair-display-extrabold-italic {
+    font-family: "Playfair Display Extra Bold Italic", serif;
 }
