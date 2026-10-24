@@ -2,7 +2,7 @@ import { useNavigate, useParams, useLocation } from "react-router";
 import { useEffect } from "react";
 import { CircleArrowLeft } from "lucide-react";
 import NavBar from '../components/NavBar';
-import ScriptureCard from '../components/ScriptureCard';
+import scripturesData from "../data/scriptures.json";
 
 const ScripturesListing = () => {
     const navigate = useNavigate();
@@ -11,6 +11,14 @@ const ScripturesListing = () => {
     const cardCategory = location.state?.cardCategory;
 
     const { cardId } = useParams();
+
+    const selectedCard = scripturesData.find((card) => card.id === cardId);
+
+    if (!selectedCard) {
+        useEffect(() => {
+            navigate("*");
+        }, []);
+    }
 
     let text = "";
     let writeup = "";
@@ -35,8 +43,8 @@ const ScripturesListing = () => {
             <section>
                 <NavBar />
 
-                <button className="plus-jakarta-sans text-md text-gray-800 mt-30 mb-15 ml-7 flex gap-2 justify-center items-center cursor-pointer lg:mt-40 lg:ml-20 lg:text-lg lg:mb-7" onClick={() => navigate(-1)}>
-                    <span className="text-black"><CircleArrowLeft size={40} /></span>
+                <button className="plus-jakarta-sans text-md text-gray-800 mt-22 mb-15 ml-7 flex gap-2 justify-center items-center cursor-pointer lg:mt-40 lg:ml-20 lg:text-lg lg:mb-7" onClick={() => navigate(-1)}>
+                    <span className="text-black hover:text-gray-800 transition"><CircleArrowLeft size={40} /></span>
                     Go back
                 </button>
 
@@ -46,7 +54,16 @@ const ScripturesListing = () => {
                 </header>
 
                 <section className="mt-12">
-                    <ScriptureCard reference="Luke 1:37" preview="For with God nothing shall be..." full_scripture="For with God nothing shall be impossible" />
+                    <p className="plus-jakarta-sans-extrabold italic text-gray-900 ml-10 lg:ml-28">Read:</p>
+
+                    <ul className="cormorant-garamond flex items-center justify-center flex-wrap gap-5 w-[90%] lg:w-[90%] mt-10 mb-10 mx-auto">
+                        { selectedCard.scriptures.map((reference) => (
+                            <li key={reference} className="cormorant-garamond-medium font-bold text-gray-900 text-xl w-[153px] lg:w-[180px]">
+                                <span className="playfair-display-extrabold-italic">* {" "}</span>
+                                {reference}
+                            </li>
+                        )) }
+                    </ul>
                 </section>
             </section>
         </>
