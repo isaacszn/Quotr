@@ -25,7 +25,7 @@ const Home = () => {
 
             <section className="mt-15 mb-20 lg:ml-25 flex justify-around flex-col lg:mt-25">
               <h1 className="plus-jakarta-sans-medium text-gray-800 text-xl font-bold ml-7 lg:text-2xl lg:text-center">Emotional / Mental States:</h1>
-              <div className="poppins flex justify-evenly items-center flex-wrap mt-5 gap-1 w-[80%] mx-auto lg:w-[90%]">
+              <div className="poppins flex justify-evenly items-center flex-wrap mt-5 gap-1 w-[80%] mx-auto lg:w-[80%]">
                 <Card name="Anxious" id="anxious" category="emotion" />
                 <Card name="Angry" id="angry" category="emotion" />
                 <Card name="Happy" id="happy" category="emotion" />
@@ -66,6 +66,8 @@ const Home = () => {
                   <Card name="Honesty & integrity" id="honesty-and-integrity" category="topic" />
                   <Card name="Serving others" id="serving-others" category="topic" />
                   <Card name="Jealousy & comparison" id="jealousy-and-comparison" category="topic" />
+                  <Card name="Holy Communion" id="holy-communion" category="topic" />
+                  <Card name="Prayer" id="prayer" category="topic" />
               </div>
             </section>
 

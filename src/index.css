@@ -27,6 +27,11 @@
 }
 
 @font-face {
+    src: url("/src/fonts/PlusJakartaSans-MediumItalic.ttf");
+    font-family: "Plus Jakarta Sans Medium Italic";
+}
+
+@font-face {
     src: url("/src/fonts/JetBrainsMono-Regular.ttf");
     font-family: "Jetbrains Mono";
 }
@@ -80,6 +85,10 @@
 
 .plus-jakarta-sans-extrabold {
     font-family: "Plus Jakarta Sans Extra Bold", sans-serif;
+}
+
+.plus-jakarta-sans-medium-italic {
+    font-family: "Plus Jakarta Sans Medium Italic", sans-serif;
 }
 
 .jetbrains-mono {
