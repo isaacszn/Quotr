@@ -25,7 +25,7 @@ const Home = () => {
 
             <section className="mt-15 mb-20 lg:ml-25 flex justify-around flex-col lg:mt-25">
               <h1 className="plus-jakarta-sans-medium text-gray-800 text-xl font-bold ml-7 lg:text-2xl lg:text-center">Emotional / Mental States:</h1>
-              <div className="poppins flex justify-evenly items-center flex-wrap mt-5 gap-1 w-[80%] mx-auto lg:w-[80%]">
+              <div className="poppins flex flex-wrap gap-3 justify-center px-6 pb-10 mt-5 mx-auto lg:px-20">
                 <Card name="Anxious" id="anxious" category="emotion" />
                 <Card name="Angry" id="angry" category="emotion" />
                 <Card name="Happy" id="happy" category="emotion" />
@@ -42,7 +42,7 @@ const Home = () => {
 
             <section className="mb-20 lg:ml-25 flex justify-around flex-col">
               <h1 className="plus-jakarta-sans-medium text-gray-800 text-xl font-bold ml-7 lg:text-2xl lg:text-center">Life Situations:</h1>
-              <div className="poppins flex justify-evenly items-center flex-wrap mt-5 gap-2 w-[80%] mx-auto">
+              <div className="poppins flex flex-wrap gap-3 justify-center px-6 pb-10 mt-5 mx-auto lg:px-20">
                 <Card name="Getting married" id="getting-married" category="situation" />
                 <Card name="Going through a breakup" id="going-through-a-breakup" category="situation" />
                 <Card name="Starting a new job" id="starting-a-new-job" category="situation" />
@@ -58,7 +58,7 @@ const Home = () => {
 
             <section className="mb-20 lg:ml-25 flex justify-around flex-col">
               <h1 className="plus-jakarta-sans-medium text-gray-800 text-xl font-bold ml-7 lg:text-2xl lg:text-center">Topics / Teachings:</h1>
-              <div className="poppins flex justify-evenly items-center flex-wrap mt-5 gap-2 w-[80%] mx-auto">
+              <div className="poppins flex flex-wrap gap-3 justify-center px-6 pb-10 mt-5 mx-auto lg:px-20">
                   <Card name="Marriage & relationships" id="marriage-and-relationships" category="topic" />
                   <Card name="Finances & money" id="finances-and-money" category="topic" />
                   <Card name="Purpose & calling" id="purpose-and-calling" category="topic" />
@@ -73,7 +73,7 @@ const Home = () => {
 
             <section className="mb-20 lg:ml-25 flex justify-around flex-wrap flex-col">
               <h1 className="plus-jakarta-sans-medium text-gray-800 text-xl font-bold ml-7 lg:text-2xl lg:text-center">Celebrations / Milestones:</h1>
-              <div className="poppins flex justify-evenly items-center flex-wrap mt-5 gap-2 w-[80%] mx-auto">
+              <div className="poppins flex flex-wrap gap-3 justify-center px-6 pb-10 mt-5 mx-auto lg:px-20">
                 <Card name="New job" id="new-job" category="milestones" />
                 <Card name="Birthday" id="birthday" category="milestones" />
                 <Card name="Baby birth" id="baby-birth" category="milestones" />

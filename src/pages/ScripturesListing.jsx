@@ -80,7 +80,7 @@ const ScripturesListing = () => {
         <NavBar />
 
         <button
-          className="plus-jakarta-sans backdrop-blur-[6px] fixed top-22 left-7 border border-gray-400/50 rounded-full py-2 px-3 text-md text-gray-800 flex gap-2 justify-center items-center cursor-pointer lg:text-lg lg:top-35 lg:left-20 select-none touch-manipulation"
+          className="plus-jakarta-sans backdrop-blur-[6px] fixed top-22 left-7 z-100 border border-gray-400/50 rounded-full py-2 px-3 text-md text-gray-800 flex gap-2 justify-center items-center cursor-pointer lg:text-lg lg:top-35 lg:left-20 select-none touch-manipulation"
           onClick={() => navigate(-1)}
           type="button"
         >
@@ -147,7 +147,7 @@ const ScripturesListing = () => {
                       state: { cardCategory: card.group },
                     })
                   }
-                  className="plus-jakarta-sans text-gray-900 text-sm md:text-base border border-gray-300 rounded-full bg-yellow-100 px-4 py-2 transition hover:bg-yellow-100/70 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 select-none touch-manipulation"
+                  className="plus-jakarta-sans text-gray-900 text-md md:text-lg border border-gray-300 rounded-full bg-yellow-100 px-4 py-2 transition hover:bg-yellow-100/70 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-300 select-none touch-manipulation cursor-pointer"
                 >
                   {card.name}
                 </button>

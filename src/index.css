@@ -151,11 +151,12 @@ body {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  background: rgba(17, 24, 39, 0.82);
+  /*background: rgba(17, 24, 39, 0.82);*/
+  background-color: darkred;
   transform: scaleX(0);
   transform-origin: center center;
   transition: transform 0.28s ease, opacity 0.28s ease;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
 }
 
 .reference-link:hover::after,
