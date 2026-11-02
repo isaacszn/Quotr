@@ -1,49 +1,100 @@
-import { useState } from "react";
-import { Link } from "react-router";
+import { useEffect, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/app", label: "Find Your Verse" },
+  { to: "/about", label: "About Quotr" },
+];
+
 const NavBar = () => {
-    const [ isOpen, setIsOpen ] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-    // Toggler function
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
-    return (
-        <nav className="bg-red-900 text-yellow-100 flex justify-around items-center gap-20 w-[100%] h-[60px] fixed top-0 z-100 lg:h-[70px] lg:py-[3.5%]">
-            <div className="lg:w-[10%]">
-                <a href="https://usequotr.vercel.app">
-                    <img src="/logo_navbar.svg" alt="Logo" className="rounded-full flex justify-center w-[40px] h-[40px] lg:ml-10" />
-                </a>
-            </div>
+  const linkClasses = ({ isActive }) =>
+    [
+      "relative rounded-full px-2 py-1.5 text-sm font-semibold tracking-wide transition-colors duration-200",
+      isActive ? "text-yellow-50" : "text-yellow-100/90 hover:text-yellow-50",
+      "after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-full after:-translate-x-1/2 after:origin-center after:scale-x-0 after:bg-yellow-100 after:transition-transform after:duration-300 after:ease-out",
+      isActive || "hover:after:scale-x-100",
+    ].join(" ");
 
-            <div className="cormorant-garamond-bold text-3xl lg:text-4xl lg:min-w-[20%] lg:ml-[490px]"><a href="https://usequotr.vercel.app">Quotr</a></div>
+  return (
+    <header className="fixed inset-x-0 top-0 z-50">
+      <nav className="flex h-[60px] w-full items-center justify-between bg-red-900 px-4 text-yellow-100 shadow-[0_6px_20px_rgba(0,0,0,0.12)] ring-1 ring-red-950/20 sm:px-6 lg:h-[72px] lg:px-8">
+        <a
+          href="https://usequotr.vercel.app"
+          className="flex items-center gap-3"
+          aria-label="Go to homepage"
+        >
+          <img
+            src="/logo_navbar.svg"
+            alt="Quotr logo"
+            className="h-10 w-10 rounded-full object-cover"
+          />
+          <span className="cormorant-garamond-bold text-3xl leading-none tracking-tight lg:text-4xl">
+            Quotr
+          </span>
+        </a>
 
-            <div className="rounded-full w-[40px] h-[40px] cursor-pointer transition lg:hidden flex justify-center items-center transition" onClick={() => setIsOpen(!isOpen)}>
-                { isOpen ? <span className="text-3xl font-bold bg-yellow-100 text-black rounded-full w-9 h-9 flex justify-center items-center text-center hover:bg-yellow-50 transition"><X className="w-6 h-10" strokeWidth={3} /></span> : <span className="text-3xl font-bold text-yellow-50 text-center"><Menu className="w-6 h-6" strokeWidth={3} /></span> }
-            </div>
+        <div className="plus-jakarta-sans-medium hidden items-center justify-center gap-6 lg:flex">
+          {navLinks.map((link) => (
+            <NavLink key={link.to} to={link.to} className={linkClasses}>
+              {link.label}
+            </NavLink>
+          ))}
+        </div>
 
-            { isOpen && (
-                <div className="plus-jakarta-sans fixed left-0 right-0 top-[60px] bg-red-900 text-yellow-100 flex flex-col p-6 space-y-4 z-50 shadow-xl border-t border-red-900 animate-in fade-in slide-in-from-top-2 duration-500 underline transition">
-                    <Link to="/" onClick={() => setIsOpen(false)}><span className="font-bold hover:text-yellow-50 transition">Home</span></Link>
-                    <Link to="/app" onClick={() => setIsOpen(false)}><span className="font-bold hover:text-yellow-50 transition">Find Your Verse</span></Link>
-                    <Link to="/about" onClick={() => setIsOpen(false)}><span className="font-bold hover:text-yellow-50 transition">About Quotr</span></Link>
-                    {/*<span></span>*/}
-                    {/* ADD THEME TOGGLER HERE */}
-                </div>
-            ) }
+        <button
+          type="button"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="z-50 inline-flex h-10 w-10 items-center justify-center rounded-full border border-yellow-100/20 bg-yellow-100/5 text-yellow-100 transition hover:bg-yellow-100/10 focus:outline-none focus:ring-2 focus:ring-yellow-100/70 cursor-pointer lg:hidden"
+        >
+          {isOpen ? (
+            <X className="h-5 w-5" strokeWidth={2.5} />
+          ) : (
+            <Menu className="h-5 w-5" strokeWidth={2.5} />
+          )}
+        </button>
+      </nav>
 
-            {/* Desktop Nav */}
-            <div className="hidden plus-jakarta-sans font-bold underline lg:flex justify-center items-center gap-10 lg:w-[40%] lg:mr-15">
-                <Link to="/" onClick={() => setIsOpen(false)}><span className="font-bold hover:text-yellow-50 transition">Home</span></Link>
-                    <Link to="/app" onClick={() => setIsOpen(false)}><span className="font-bold hover:text-yellow-50 transition">Find Your Verse</span></Link>
-                    <Link to="/about" onClick={() => setIsOpen(false)}><span className="font-bold hover:text-yellow-50 transition">About Quotr</span></Link>
-                {/*<span></span>*/}
-                {/* ADD THEME TOGGLER HERE */}
-            </div>
-        </nav>
-    )
+      <div
+        className={[
+          "overflow-hidden border-t border-red-950/30 bg-red-900/95 shadow-lg backdrop-blur-sm transition-all duration-300 ease-out lg:hidden",
+          isOpen
+            ? "max-h-64 opacity-100 translate-y-0"
+            : "max-h-0 opacity-0 -translate-y-2",
+        ].join(" ")}
+      >
+        <div className="flex flex-col gap-2 px-4 py-4">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              className={({ isActive }) =>
+                [
+                  "plus-jakarta-sans-medium rounded-lg px-3 py-2 text-base font-semibold transition-colors duration-200",
+                  isActive
+                    ? "bg-yellow-100/10 text-yellow-50"
+                    : "text-yellow-100/90 hover:bg-yellow-100/5 hover:text-yellow-50",
+                ].join(" ")
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              {link.label}
+            </NavLink>
+          ))}
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default NavBar;

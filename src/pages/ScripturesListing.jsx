@@ -80,7 +80,7 @@ const ScripturesListing = () => {
         <NavBar />
 
         <button
-          className="plus-jakarta-sans backdrop-blur-[6px] fixed top-22 left-7 z-100 border border-gray-400/50 rounded-full py-2 px-3 text-md text-gray-800 flex gap-2 justify-center items-center cursor-pointer lg:text-lg lg:top-35 lg:left-20 select-none touch-manipulation"
+          className="plus-jakarta-sans backdrop-blur-[6px] fixed top-22 left-7 z-40 border border-gray-400/50 rounded-full py-2 px-3 text-md text-gray-800 flex gap-2 justify-center items-center cursor-pointer lg:text-lg lg:top-35 lg:left-20 select-none touch-manipulation"
           onClick={() => navigate(-1)}
           type="button"
         >

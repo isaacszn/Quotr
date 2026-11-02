@@ -139,9 +139,10 @@ body {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: inherit;
+  color: #111827;
   padding-bottom: 2px;
   -webkit-tap-highlight-color: transparent;
+  transition: color 0.28s ease;
 }
 
 .reference-link::after {
@@ -151,24 +152,37 @@ body {
   bottom: -2px;
   width: 100%;
   height: 2px;
-  /*background: rgba(17, 24, 39, 0.82);*/
-  background-color: darkred;
-  transform: scaleX(0);
-  transform-origin: center center;
-  transition: transform 0.28s ease, opacity 0.28s ease;
-  /*opacity: 0.8;*/
+  background-color: rgba(17, 24, 39, 0.7);
+  transform: scaleX(0.75);
+  transform-origin: left center;
+  opacity: 0.8;
+  transition:
+    transform 0.28s ease,
+    background-color 0.28s ease,
+    opacity 0.28s ease;
 }
 
 .reference-link:hover::after,
 .reference-link:focus::after,
 .reference-link:active::after {
+  background-color: rgba(127, 29, 29, 0.95);
   transform: scaleX(1);
-  transform-origin: center center;
+  opacity: 1;
 }
 
 .reference-link:hover,
 .reference-link:focus,
 .reference-link:active {
+  color: #7f1d1d;
   text-decoration: none;
   outline: none;
+}
+
+.reference-link:focus-visible {
+  color: #7f1d1d;
+}
+
+.reference-link:focus-visible::after {
+  background-color: rgba(127, 29, 29, 0.95);
+  transform: scaleX(1);
 }
