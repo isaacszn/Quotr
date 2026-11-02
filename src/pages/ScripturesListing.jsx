@@ -108,7 +108,7 @@ const ScripturesListing = () => {
             Read:
           </p>
 
-          <ul className="cormorant-garamond flex items-center justify-center flex-wrap gap-5 w-[90%] lg:w-[90%] mt-10 mb-10 mx-auto">
+          <ul className="cormorant-garamond flex flex-wrap gap-3 justify-center mt-5 pb-10 lg:px-20">
             {selectedCard.scriptures.map((reference) => (
               <li
                 key={reference}
