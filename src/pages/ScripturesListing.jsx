@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 import scripturesData from "../data/scriptures.json";
 
 const buildBibleGatewayUrl = (reference) =>
-  `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=NIV`;
+  `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=NLT`;
 
 const ScripturesListing = () => {
   const navigate = useNavigate();
