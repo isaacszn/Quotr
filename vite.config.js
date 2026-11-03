@@ -37,12 +37,10 @@ export default defineConfig({
             purpose: 'any maskable'
           }
         ]
-      }, // <-- The manifest object closes here
-
-      // 🛠️ MOVED INSIDE: devOptions is now correctly a setting inside VitePWA
+      },
       devOptions: {
         enabled: true
       }
-    }), // <-- VitePWA plugin closes here cleanly
+    }),
   ],
 })
