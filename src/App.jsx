@@ -4,11 +4,14 @@ import Main from "./pages/Main";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ScripturesListing from "./pages/ScripturesListing";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/app" element={<Main />} />

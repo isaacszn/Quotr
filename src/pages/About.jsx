@@ -21,7 +21,7 @@ const About = () => {
                 </main>
 
                 <footer>
-                    <p className="cormorant-garamond-semibold text-center text-gray-800 text-xl italic mb-10 flex gap-2 justify-center items-center"><span className="text-gray-500 jetbrains-mono">{">"}</span> Made with <span className="text-red-700">&hearts;</span> by <a className="text-red-900 underline" href="https://x.com/_IamZik" target="_blank">Ugochukwu Isaac</a></p>
+                    <p className="cormorant-garamond-semibold text-center text-gray-800 text-xl italic mb-10 flex gap-2 justify-center items-center"><span className="text-gray-500 jetbrains-mono">{">"}</span> Made with <span>❤️</span> by <a className="text-red-900 underline" href="https://x.com/_IamZik" target="_blank">Ugochukwu Isaac</a></p>
                 </footer>
             </section>
         </>
