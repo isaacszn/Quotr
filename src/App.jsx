@@ -5,12 +5,14 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ScripturesListing from "./pages/ScripturesListing";
 import ScrollToTop from "./components/ScrollToTop";
+import InstallBanner from "./InstallBanner";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <ScrollToTop />
+        <InstallBanner />
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
