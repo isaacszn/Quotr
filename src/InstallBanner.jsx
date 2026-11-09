@@ -15,7 +15,7 @@ const InstallBanner = () => {
     if (!canInstall || !waited || closed) return null;
 
     return (
-        <div className="fixed inset-x-3 top-3 z-50 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-lg ring-1 ring-black/5">
+        <div className="fixed inset-x-3 top-3 z-100 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-lg ring-1 ring-black/5">
             <img src="/pwa-192x192.png" alt="icon" className="h-12 w-12 rounded-xl" />
             <div className="flex-1">
                 <p className="plus-jakarta-sans-medium text-md">Install Quotr</p>
