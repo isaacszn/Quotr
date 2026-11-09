@@ -15,8 +15,8 @@ export default defineConfig({
         name: 'Quotr',
         short_name: 'Quotr',
         description: "Your app for finding relevant Bible quotations and readings that are connected to what you're experiencing.",
-        theme_color: '#FFFDD0',
-        background_color: '#FFFDD0',
+        theme_color: '#fefce8',
+        background_color: '#fefce8',
         display: 'standalone',
         orientation: 'portrait',
         icons: [

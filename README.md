@@ -32,24 +32,14 @@ On that page, Quotr asks if you are feeling the selected category and lists rele
 
 ## Technologies Used
 
-| Technology | Description |
-|------------|-------------|
-| [React](https://react.dev/) | UI library for building the component-based interface |
-| [TypeScript](https://www.typescriptlang.org/) | Type definitions for safer React development |
-| [Vite](https://vitejs.dev/) | Fast build tool and development server |
-| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling for responsive layouts |
-| [React Router](https://reactrouter.com/) | Client-side routing between pages and category routes |
-| [Lucide React](https://lucide.dev/) | Lightweight icon library used in navigation and actions |
+  - [React.js](https://react.dev/) UI library for building the component-based interface
+  - [Vite](https://vitejs.dev/) Fast build tool and development server
+  - [Tailwind CSS](https://tailwindcss.com/) Utility-first styling for responsive layouts
+  - [React Router](https://reactrouter.com/) Client-side routing between pages and category routes
+  - [Lucide React](https://lucide.dev/) Lightweight icon library used in navigation and actions
 
 ## Author
 
 Built by Ugochukwu Isaac.
 
 - X (Twitter): [@_IamZik](https://x.com/_IamZik)
-
-## Badges
-
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
